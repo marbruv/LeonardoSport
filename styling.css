@@ -1,0 +1,77 @@
+body {
+    background-color: #F5F5F5;
+    color: #022435;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 10px 10vw 10px 5px;
+    font-size: 16;
+}
+
+li:hover {
+    color: #2A7CB7;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: aquamarine;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.sidemenu {
+    width: 30vw;
+}
+
+.dotntext {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dot {
+    width: 20px;
+    height: 20px;
+    margin-top: 2.7vh;
+    margin-left: 50px;
+}
+
+.sportsname {
+    margin-left: 5vw;
+}
+
+.about {
+    width: 40vw;
+    margin-top: 10vh;
+}
+
+.decor {
+    width: 30vw;
+}
+
+.gallery {
+    background-color: aqua;
+    height: 30vh;
+}
