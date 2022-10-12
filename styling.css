@@ -31,15 +31,44 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #022435;
+}
+
+.logo {
+    width: 5%;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.top img {
+    width: 2vw;
+}
+
 .navbar {
-    height: 10vh;
-    background-color: aquamarine;
+    height: 3vh;
+    display: flex;
+    margin-top: 2.7vh;
+}
+
+.navbar a {
+    padding-right: 15vw;
+}
+
+.navbar a:last-child {
+    padding-right: 0;
 }
 
 .content {
     display: flex;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .sidemenu {
@@ -71,7 +100,14 @@ img {
     width: 30vw;
 }
 
+.decor img {
+    margin-top: 20vh;
+    width: 80%;
+    margin-left: 20%;
+}
+
 .gallery {
     background-color: aqua;
     height: 30vh;
+    margin-top: 10vh;
 }
