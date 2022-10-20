@@ -84,8 +84,13 @@ a {
     width: 20px;
     height: 20px;
     margin-top: 2vh;
-    margin-left: 40px;
-    margin-right: 3px;
+    margin-left: 1vw;
+    margin-right: 0.3vw;
+}
+
+.dotntext > #dot {
+    margin-top: 2.8vh;
+    margin-right: 0;
 }
 
 .sportsname {
