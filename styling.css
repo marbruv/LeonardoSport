@@ -183,7 +183,7 @@ a {
 
 .nav-container .burger {
     display: none;
-    height: 26px;
+    height: 27.5px;
     width: 32px;
     position: absolute;
     top: 15vh;
@@ -194,54 +194,29 @@ a {
 }
 
 .menu-items {
+    display: none;
     padding-top: 120px;
-    height: 100vh;
+    height: 0;
     width: 100%;
     transform: translate(150%);
-    display: flex;
     flex-direction: column;
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
+    background-color: cadetblue;
 }
 
 .menu-items li {
+    display: none;
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
     list-style-type: none;
+    background-color: darkgoldenrod;
 }
 
-.nav-container .burger .line .line1 {
-    transition: transform 0.4s ease-in-out;
-}
 
-.nav-container .burger .line .line2 {
-    transition: transform 0.2s ease-in-out;
-}
-
-.nav-container .burger .line .line3 {
-    transition: transform 0.4s ease-in-out;
-}
-
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .burger .line3 {
-    transform-origin: 0% 0%;
-    transform: rotate(45deg);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .burger .line2 {
-    transform: scaleY(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .burger .line1 {
-    transform-origin: 0% 100%;
-    transform: rotate(-45deg);
-}
 
 @media only screen and (max-width: 640px) {
     body {
@@ -254,14 +229,57 @@ a {
         background-color: aqua;
     }
 
+    .nav-container input[type="checkbox"]:checked ~ .content {
+        display: none;
+    }
+
     .navbar, #dot{
         display: none;
     }
 
-    .nav-container .burger{
+    .nav-container .burger  {
         display: flex;
         float: right;
+        
     }
+    
+    .nav-container .burger .line .line1 {
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container .burger .line .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-container .burger .line .line3 {
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+        display: flex;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .menu-items li {
+        transform: translateX(0);
+        display: flex;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .burger .line3 {
+        transform-origin: 0% 0%;
+        transform: rotate(-45deg);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .burger .line2 {
+        transform: scaleY(0);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .burger .line1 {
+        transform-origin: 0% 100%;
+        transform: rotate(45deg);
+    }
+
+   
 
     .nav-container .burger .line {
         display: block;
@@ -270,5 +288,6 @@ a {
         border-radius: 10px;
         background-color: #022435;
     }
+
 
 }
