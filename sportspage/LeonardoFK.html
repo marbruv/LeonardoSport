@@ -7,30 +7,68 @@
 </head>
 <body>
 <div class="logo">
-    <img src="../img/Logo1.png">
+    <a href="../homepage.html"><img src="../img/Logo1.png"></a>
 </div>
 <div class="top">
     <div>
         <img id="dot" src="../img/orangedot.png">
     </div>
     <div class="navbar">
-        <a href="#">Leonardo FK</a>
-        <a href="#">Bordtenniskameratene</a>
-        <a href="#">Beerpong buddies</a>
-        <a href="#">Croquetkom</a>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="../sportspage/LeonardoFK.html">Leonardo FK</a></button>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="../eventpage/eventsFK.html">Games and practises</a>
+                <a href="../joinpage/joinFK.html">Join our team?</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="../sportspage/bordtennis.html">Bordtenniskameratene</a></button>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="../eventpage/eventsFK.html">Games and practises</a>
+                <a href="../joinpage/joinFK.html">Join our team?</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="../sportspage/beerpong.html">Beerpong buddies</a></button>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="../eventpage/eventsFK.html">Games and practises</a>
+                <a href="../joinpage/joinFK.html">Join our team?</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="lastdropbtn"><a href="../sportspage/croquet.html">Croquetkom</a></button>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="../eventpage/eventsFK.html">Games and practises</a>
+                <a href="../joinpage/joinFK.html">Join our team?</a>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="burger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="menu-items">
+            <li><a href="bordtennis.html">Bordtenniskameratene</a></li>
+        </div>
     </div>
 </div>
-
 
 <div class="content">
     <div class="sidemenu">
         <h1 class="sportsname">Leonardo FK</h1>
         <div class="dotntext">
-            <img id="dot" src="../img/orangedot.png" type="image">
+            <img id="sidedot" src="../img/orangedot.png" type="image">
             <ul>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Games and practises</a></li>
-                <li><a href="#">Join our team?</a></li>
+                <li><a href="../eventpage/eventsFK.html">Games and practises</a></li>
+                <li><a href="../joinpage/joinFK.html">Join our team?</a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +76,7 @@
         <img src="../img/leoFK.png" type="image">
         <p>Leonardo FK is divided into one men's and one women's team. The teams 
             practice together at 16:15 every Monday in Dødens dal.</p>
-        <h2>Contact info:</h2>
+        <h3>Contact info:</h3>
         <p>Tobias Eliassen</p>
         <p>95267893</p>
         <p>leofk@leonardo.no</p>
