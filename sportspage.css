@@ -13,21 +13,6 @@ h1, h2, h3, h4 {
 
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    padding: 10px 10vw 10px 5px;
-    font-size: 16;
-}
-
-li:hover {
-    color: #2A7CB7;
-    text-decoration: underline;
-}
-
 p {
     font-size: 16px;
 }
@@ -62,8 +47,7 @@ a {
 #dot {
     width: 20px;
     height: 20px;
-    margin-top: 40px;
-    display: none;
+    position: absolute;
 }
 
 #pil {
@@ -131,44 +115,6 @@ a {
 
 .sidemenu {
     width: 30vw;
-}
-
-.dotntext {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#sidedot {
-    width: 20px;
-    height: 20px;
-    margin-left: 1vw;
-    margin-top: 2.9vh;
-    margin-right: 0;
-}
-
-.sportsname {
-    margin-left: 5vw;
-}
-
-.about {
-    width: 40vw;
-    margin-top: 10vh;
-}
-
-.decor {
-    width: 30vw;
-}
-
-.decor img {
-    margin-top: 20vh;
-    width: 80%;
-    margin-left: 20%;
-}
-
-.gallery {
-    background-color: aqua;
-    height: 30vh;
-    margin-top: 10vh;
 }
 
 .nav-container .checkbox {
@@ -327,7 +273,7 @@ a {
     margin-top: 0;
 }
 
-.about > p, .join > p {
+.about > a, .join > a {
     color: #F5F5F5;
 }
 
@@ -335,7 +281,7 @@ a {
     display: flex;
     height: 41vw;
     width: 41vw;
-    margin-top: 130px;
+    margin-top: -40px;
 }
 
 .imgcontainer > img {
@@ -343,6 +289,30 @@ a {
 }
 
 .illustration {
+    position: relative;
     width: fit-content;
+    z-index: -10;
+}
+
+.croquet {
     margin-top: -580px;
+}
+
+.fk {
+    margin-top: -300px;
+}
+
+#arrow > img {
+    height: 10vw;
+    width: 8vw;
+    margin-top: -10px;
+    margin-left: 31vw;
+    position: relative;
+    z-index: -1;
+}
+
+#arrow > p {
+    margin-left: 30vw;
+    text-align: center;
+    font-size: 1vw;
 }
