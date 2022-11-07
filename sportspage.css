@@ -6,11 +6,11 @@ body {
 
 h1 {
     font-size: 36px;
+    white-space: nowrap;
 }
 
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif
-
 }
 
 p {
@@ -45,9 +45,11 @@ a {
 }
 
 #dot {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     position: absolute;
+    margin-top: 3px; 
+    margin-left: -23px;
 }
 
 #pil {
@@ -302,6 +304,14 @@ a {
     margin-top: -300px;
 }
 
+.beerpong {
+    margin-top: -300px;
+}
+
+.bordtennis {
+    margin-top: -300px;
+}
+
 #arrow > img {
     height: 10vw;
     width: 8vw;
@@ -315,4 +325,5 @@ a {
     margin-left: 30vw;
     text-align: center;
     font-size: 1vw;
+    margin-top: -10px;
 }
