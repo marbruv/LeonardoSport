@@ -5,40 +5,12 @@ body {
 }
 
 h1 {
-    font-size: 48px;
-}
-
-h2 {
     font-size: 36px;
-}
-
-h3 {
-    font-size: 28px;
-    font-weight: normal;
-}
-
-h4 {
-    font-size: 18px;
 }
 
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif
 
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    padding: 10px 10vw 10px 5px;
-    font-size: 16;
-}
-
-li:hover {
-    color: #2A7CB7;
-    text-decoration: underline;
 }
 
 p {
@@ -75,8 +47,7 @@ a {
 #dot {
     width: 20px;
     height: 20px;
-    margin-top: 40px;
-    display: none;
+    position: absolute;
 }
 
 #pil {
@@ -144,111 +115,6 @@ a {
 
 .sidemenu {
     width: 30vw;
-}
-
-.dotntext {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#bordtennisIllustrasjon {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-}
-
-#BeerpongIllustrasjon {
-    float: right;
-    width: 45vw;
-    height: 35vw;
-    position: absolute;
-    right: 0px;
-    z-index: -1;
-}
-
-.sportsimgs {
-    margin-top: 20vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1vw;
-    column-gap: 10vw;
-    align-items: center;
-    justify-content: center;
-}
-
-#circle {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
-  }
-
-#circle2 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
-}
-#circle3 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
-}
-
-#circle4 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
-      }
-
-
-#dot {
-    width: 20px;
-    height: 20px;
-    margin-top: 6.5vh;
-    margin-left: 1vw;
-    margin-right: 0;
-}
-
-#sidedot {
-    width: 20px;
-    height: 20px;
-    margin-left: 1vw;
-    margin-top: 2.9vh;
-    margin-right: 0;
-}
-
-.sportsname {
-    margin-left: 5vw;
-}
-
-.about {
-    width: 40vw;
-    margin-top: 10vh;
-}
-
-.decor {
-    width: 30vw;
-}
-
-.decor img {
-    margin-top: 20vh;
-    width: 80%;
-    margin-left: 20%;
-}
-
-.gallery {
-    background-color: aqua;
-    height: 30vh;
-    margin-top: 10vh;
 }
 
 .nav-container .checkbox {
@@ -407,7 +273,7 @@ a {
     margin-top: 0;
 }
 
-.about > p, .join > p {
+.about > a, .join > a {
     color: #F5F5F5;
 }
 
@@ -415,7 +281,7 @@ a {
     display: flex;
     height: 41vw;
     width: 41vw;
-    margin-top: 130px;
+    margin-top: -40px;
 }
 
 .imgcontainer > img {
@@ -423,6 +289,30 @@ a {
 }
 
 .illustration {
+    position: relative;
     width: fit-content;
+    z-index: -10;
+}
+
+.croquet {
     margin-top: -580px;
+}
+
+.fk {
+    margin-top: -300px;
+}
+
+#arrow > img {
+    height: 10vw;
+    width: 8vw;
+    margin-top: -10px;
+    margin-left: 31vw;
+    position: relative;
+    z-index: -1;
+}
+
+#arrow > p {
+    margin-left: 30vw;
+    text-align: center;
+    font-size: 1vw;
 }
