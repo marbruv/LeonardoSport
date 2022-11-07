@@ -151,64 +151,6 @@ a {
     justify-content: flex-end;
 }
 
-#bordtennisIllustrasjon {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-}
-
-#BeerpongIllustrasjon {
-    float: right;
-    width: 45vw;
-    height: 35vw;
-    position: absolute;
-    right: 0px;
-    z-index: -1;
-}
-
-.sportsimgs {
-    margin-top: 20vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1vw;
-    column-gap: 10vw;
-    align-items: center;
-    justify-content: center;
-}
-
-#circle {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
-  }
-
-#circle2 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
-}
-#circle3 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
-}
-
-#circle4 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
-      }
-
 
 #dot {
     width: 20px;
