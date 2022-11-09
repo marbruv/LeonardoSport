@@ -250,6 +250,10 @@ a {
     width: 33%;
 }
 
+.abouttext > p {
+    min-width: 40ch;
+}
+
 .join {
     display: flex;
     background-color: #197B6E;
