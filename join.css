@@ -1,4 +1,112 @@
-.form{
-    margin-left: auto;
-    margin-right: auto;
+body {
+    background-color: #F5F5F5;
+    color: #022435;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h1 {
+    font-size: 36px;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p {
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+/*Textinput*/
+
+
+input,
+span,
+label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  margin: 0px;
+  padding: 5px;
+  border: none;
+  font-size: 18px;
+  outline:0;
+  width:500px;
+}
+
+input.questions{
+  font-size: 28px; /*When your write*/
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  
+}
+
+input.questions + label{
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 2px solid #022435;
+  height: 0px;
+}
+
+input.questions:focus + label{
+  width: 100%;
+}
+
+input.questions:focus,
+input.questions:valid {
+  padding-top: 35px;
+}
+
+input.questions:focus + label > span,
+input.questions:valid + label > span {
+  top: -80px; /*avstand mellom label og input*/
+  font-size: 14px; /*when placemaker becomes label in top*/
+  color: #333;
+}
+
+input.questions:valid + label{
+  border-color: #d66b1e;
+}
+
+input.questions:invalid{
+  box-shadow: none;
+}
+
+input.questions + label > span{
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 18px; /*placemaker tekst*/
+  top: -40px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+/*Radioinput*/
+
+
