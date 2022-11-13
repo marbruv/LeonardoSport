@@ -119,6 +119,23 @@ a {
     width: 30vw;
 }
 
+.con {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-container {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.nav-container a:hover {
+    font-weight: bolder;
+}
+
 .nav-container .checkbox {
     position: absolute;
     display: none;
@@ -146,70 +163,82 @@ a {
 .menu-items {
     display: none;
     padding-top: 120px;
-    height: 0;
+    height: 100vh;
     width: 100%;
-    transform: translate(150%);
+    transform: translate(110%);
     flex-direction: column;
-    margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: cadetblue;
+    background-color: #dbdbdb;
 }
 
 .menu-items li {
     display: none;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
     list-style-type: none;
-    background-color: darkgoldenrod;
 }
 
 .container {
     display: flex;
-    margin-top: 15vh;
+    margin-top: 11vh;
     margin-left: 8%;
     margin-right: 8%;
-    height: 100vh;
+    height: 80vh;
     justify-content: space-between;
 }
 
 .abouttext {
+    display: flex;
+    flex-direction: column;
+}
+
+.abouttext1 {
+    display: flex;
+    flex-direction: column;
     width: 33%;
 }
 
-.abouttext > p {
+.abouttext1 > p {
     min-width: 40ch;
 }
 
-.join {
+.join, .about {
     display: flex;
-    background-color: #197B6E;
     border-radius: 50%;
     width: 13vw;
     height: 13vw;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.join {
+    background-color: #197B6E;
 }
 
 .about {
-    display: flex;
     background-color: #022435;
-    border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    float: right;
-    margin-top: 0;
+    margin-left: 14vw;
+    margin-top: 10px;
 }
 
 .about > a, .join > a {
     color: #F5F5F5;
+    display: flex;
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.about:hover, .join:hover, .about > a:hover, .join > a:hover {
+    width: 15vw;
+    height: 15vw;
 }
 
 .imgcontainer {
@@ -230,19 +259,19 @@ a {
 }
 
 .croquet {
-    margin-top: -580px;
+    margin-top: -450px;
 }
 
 .fk {
-    margin-top: -300px;
+    margin-top: -200px;
 }
 
 .beerpong {
-    margin-top: -300px;
+    margin-top: -200px;
 }
 
 .bordtennis {
-    margin-top: -300px;
+    margin-top: -200px;
 }
 
 #arrow > img {
@@ -255,56 +284,48 @@ a {
 }
 
 #arrow > p {
-    margin-left: 30vw;
+    margin-left: 31vw;
     text-align: center;
     font-size: 1vw;
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
-@media only screen and (max-width: 640px) {
-    body {
-        background-color: #2A7CB7;
-    }
-}
-
-@media only screen and (min-width: 641px) and (max-width: 1007px) {
-    body {
-        background-color: aqua;
+@media only screen and (max-width: 1007px) {
+    .nav-container .burger .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #022435;
     }
 
-    .nav-container input[type="checkbox"]:checked ~ .content {
-        display: none;
-    }
-
-    .navbar, #dot{
-        display: none;
+    .nav-container .checkbox, .nav-container {
+        display: block;
     }
 
     .nav-container .burger  {
         display: flex;
         float: right;
     }
-    
-    .nav-container .burger .line .line1 {
-        transition: transform 0.4s ease-in-out;
+
+    .navbar, #dot{
+        display: none;
     }
-    
-    .nav-container .burger .line .line2 {
-        transition: transform 0.2s ease-in-out;
-    }
-    
-    .nav-container .burger .line .line3 {
-        transition: transform 0.4s ease-in-out;
+
+    .menu-items, .menu-items li {
+        display: flex;
     }
     
     .nav-container input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
-        display: flex;
     }
-    
+
     .nav-container input[type="checkbox"]:checked ~ .menu-items li {
         transform: translateX(0);
-        display: flex;
+    }
+
+    .nav-container input[type="checkbox"]:not(:checked) ~ .menu-items {
+        display: none;
     }
     
     .nav-container input[type="checkbox"]:checked ~ .burger .line3 {
@@ -321,15 +342,106 @@ a {
         transform: rotate(45deg);
     }
 
-    .nav-container .burger .line {
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #022435;
+    .nav-container .burger .line .line1 {
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container .burger .line .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-container .burger .line .line3 {
+        transition: transform 0.4s ease-in-out;
     }
 
-    .nav-container .checkbox {
-        display: block;
+    .container {
+        margin-top: 12.8vh;
+        flex-direction: column;
+    }
+
+    .abouttext {
+        flex-direction: row;
+    }
+
+    .gallery {
+        margin-top: 0;
+    }
+
+    .join {
+        margin-top: 2vw;
+    }
+
+    .about {
+        margin-top: 2vw;
+        margin-left: 0;
+    }
+
+    .imgcontainer {
+        margin-left: 17vw;
+        height: 50vw;
+        width: 50vw;
+        margin-top: -20px;
+    }
+
+    #arrow {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+
+    #arrow p {
+        margin-left: 12vw;
+    }
+
+    .bubbles {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40vw;
+    }
+
+    .about:hover, .join:hover, .about > a:hover, .join > a:hover {
+        width: 155px;
+        height: 155px;
+        margin-bottom: -5px;
+    }
+
+    .beerpong {
+        margin-top: -400;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .gallery {
+        display: none;
+    }
+
+    .abouttext {
+        flex-direction: column;
+    }
+
+    .bubbles {
+        display: flex;
+        flex-direction: row;
+        margin-left: -10vw;
+    }
+
+    .join {
+        margin-left: 7vw;
+    }
+
+    .about {
+        margin-left: 7vw;
+    }
+
+    .bordtennis {
+        margin-top: -200px;
+    }
+
+    .croquet {
+        margin-top: -300px;
+    }
+
+    .beerpong {
+        margin-top: -200px;
     }
 }
