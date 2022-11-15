@@ -290,7 +290,9 @@ a {
 
 #hovedbilde {
     border-radius: 50%;
-    mask-image: ;
+    max-height: 95%;
+    max-width: 90%;
+
 }
 
 #clickleft {
