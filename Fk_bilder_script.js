@@ -4,7 +4,6 @@ const imgcontainer = document.getElementsByClassName("imgcontainer")
 const clickleft = document.getElementById("clickleft")
 const clickright = document.getElementById("clickright")
 //const abouttext = document.getElementsByClassName("abouttext")
-//const background = document.querySelector('body >*:not(.imgcontainer).active')
 
 
 
