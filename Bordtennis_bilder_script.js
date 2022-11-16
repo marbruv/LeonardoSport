@@ -5,8 +5,8 @@ const clickleft = document.getElementById("clickleft")
 const clickright = document.getElementById("clickright")
 
 
-const bildeListe = ["../img/Bordtennis/bordtennis.jpg", "../img/Bordtennis/bordtennismedlemmer.jpg","../img/Bordtennis/bordtennisstyre.jpg",
-"../img/Bordtennis/bordtennisleder.jpg", "../img/Bordtennis/bordtennisbord.jpg"]
+const bildeListe = ["../img/Bordtennis/bordtennis.png", "../img/Bordtennis/bordtennismedlemmer.png","../img/Bordtennis/bordtennisstyre.png",
+"../img/Bordtennis/bordtennisleder.png", "../img/Bordtennis/bordtennisbord.png"]
 
 
 let currentIndex = 0;
