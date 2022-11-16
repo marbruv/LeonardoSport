@@ -5,8 +5,7 @@ const clickleft = document.getElementById("clickleft")
 const clickright = document.getElementById("clickright")
 
 
-const bildeListe = ["../img/Bordtennis/bordtennis.jpg", "../img/Bordtennis/bordtennismedlemmer.jpg","../img/Bordtennis/bordtennisstyre.jpg",
-"../img/Bordtennis/bordtennisleder.jpg", "../img/Bordtennis/bordtennisbord.jpg"]
+const bildeListe = ["../img/Beerpong/1.jpg", "../img/Beerpong/2.png","../img/Beerpong/3.jpg","../img/Beerpong/4.jpg", ]
 
 
 let currentIndex = 0;
@@ -14,8 +13,8 @@ let currentIndex2 = bildeListe.length;
 
 
 function nestebilde() {
-    if (currentIndex >= bildeListe.length) {
-        currentIndex = 0
+    if (currentIndex >= bildeListe.length-1) {
+        currentIndex = -1
     }
         currentIndex++
         hovedbilde.src = bildeListe[currentIndex]
