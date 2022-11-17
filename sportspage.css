@@ -242,15 +242,42 @@ a {
 }
 
 .imgcontainer {
-    display: flex;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     height: 41vw;
     width: 41vw;
     margin-top: -40px;
-}
-
-.imgcontainer > img {
     border-radius: 50%;
 }
+
+#hovedbilde {
+    border-radius: 50%;
+    max-height: 95%;
+    max-width: 90%;
+
+}
+
+#clickleft {
+    /*display: none; */
+    z-index: 10;
+    left: 10%;
+    width: 10%;
+    height: 10%;
+    transform: rotate(90deg);
+ }
+ 
+ #clickright {
+    /*display: none; */
+    z-index: 10;
+    right: 10%;
+    width: 10%;
+    height: 10%;
+    transform: rotate(-90deg);
+  }
+
+
 
 .illustration {
     position: relative;
