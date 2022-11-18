@@ -266,7 +266,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(90deg);
- }
+}
  
  #clickright {
     /*display: none; */
@@ -275,9 +275,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(-90deg);
-  }
-
-
+}
 
 .illustration {
     position: relative;
@@ -326,6 +324,73 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+#bordtennisIllustrasjon {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+}
+
+#BeerpongIllustrasjon {
+    float: right;
+    width: 45vw;
+    height: 35vw;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.sportsimgs {
+    margin-top: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#info {
+    justify-items: center;
+    margin: auto;
+    width: 40vw;
+    margin-top: 10vw;
+}
+
+#circle1 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    border-radius: 10vw;
+    background: grey
+  }
+
+#circle2 {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    border-radius: 15vw;
+    background-color: grey;
+}
+#circle3 {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    border-radius: 15vw;
+    background-color: black;
+}
+
+#circle4 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    border-radius: 10vw;
+    background: black;
+}
+
+
 
 @media only screen and (max-width: 1007px) {
     .nav-container .burger .line {

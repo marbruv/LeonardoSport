@@ -2,7 +2,7 @@
     
 <head>
     <title>Join Bordtenniskameratene</title>
-    <link rel="stylesheet" href="../styling.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../join.css">
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
     <meta charset="utf-8" />
@@ -21,6 +21,7 @@
                 </div>
             </div>
             <div class="dropdown">
+                <img id="dot" src="../img/orangedot.png">
                 <button class="dropbtn"><a href="../sportspage/bordtennis.html">Bordtenniskameratene<img id="pil" src="../img/pilned.png"></a></button>
                 <div class="dropdown-content">
                     <a href="../sportspage/bordtennis.html">About</a>
@@ -32,7 +33,6 @@
                 <a href="../homepage.html"><img src="../img/logo_utenball.png"></a>
             </div>
             <div class="dropdown">
-                <img id="dot" src="../img/orangedot.png">
                 <button class="dropbtn"><a href="../sportspage/beerpong.html">Beerpong buddies<img id="pil" src="../img/pilned.png"></a></button>
                 <div class="dropdown-content">
                     <a href="../sportspage/beerpong.html">About</a>
@@ -62,17 +62,15 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="containerjoin">
         <div class="text">
             <h1>Join Bordtenniskameratene now!</h1>
-            
         </div>
     </div>
 
 
 <div class="form" id="form_id">
     <form>
-
         
     <div class="nameandemail">
         <input type="text" name="name" class="questions" id="name" required/>
@@ -88,66 +86,67 @@
     </div>
 
 
-<div class="option-container">
+    <div class="option-container">
         <label for="morten">Morten Ramm</label>
         <select id="morten" name="morten">
-        <option></option>
-        <option value="fuck">Fuck</option>
-        <option value="marry">Marry</option>
-        <option value="kill">Kill</option>
-</select>
+            <option></option>
+            <option value="fuck">Fuck</option>
+            <option value="marry">Marry</option>
+            <option value="kill">Kill</option>
+        </select>
     </div>
 
-<div class="option">
-<div class="option-container">
-<label for="jorgen">Jørgen Høst</label>
-<select id="jorgen" name="jorgen">
-    <option></option>
-  <option value="fuck">Fuck</option>
-  <option value="marry">Marry</option>
-  <option value="kill">Kill</option>
-</select>
-</div>
+    <div class="option-container">
+        <label for="jorgen">Jørgen Høst</label>
+        <select id="jorgen" name="jorgen">
+        <option></option>
+            <option value="fuck">Fuck</option>
+            <option value="marry">Marry</option>
+            <option value="kill">Kill</option>
+        </select>
+    </div>
 
-<div class="option-container">
-<label for="ole">Ole Soo</label>
-<select id="ole" name="ole">
-    <option></option>
-  <option value="fuck">Fuck</option>
-  <option value="marry">Marry</option>
-  <option value="kill">Kill</option>
-</select>
-</div>
+    <div class="option-container">
+        <label for="ole">Ole Soo</label>
+        <select id="ole" name="ole">
+            <option></option>
+            <option value="fuck">Fuck</option>
+            <option value="marry">Marry</option>
+            <option value="kill">Kill</option>
+        </select>
+    </div>
 
-<div class="option-container">
-<label for="erik">Erik Solbakken</label>
-<select id="erik" name="erik">
-    <option></option>
-  <option value="fuck">Fuck</option>
-  <option value="marry">Marry</option>
-  <option value="kill">Kill</option>
-</select>
-</div>
-</div>
 
-        <button id="submit">Submit</button>
+    <div class="option option-container">
+        <label for="erik">Erik Solbakken</label>
+        <select id="erik" name="erik">
+            <option></option>
+            <option value="fuck">Fuck</option>
+            <option value="marry">Marry</option>
+            <option value="kill">Kill</option>
+        </select>
+    </div>
+
+
+    <button id="submit">Submit</button>
     
     </div>
 
     <div class="thankyou">
-    <div id="thank_you" style="display: none;">
-        <h2> Thanks! </h2>
-        <p>Check your email for le details<br>
-            See you next practice;)</p>
-        <button id="close" type="submit">Close</button>
+        <div id="thank_you" style="display: none; height: 58vh;">
+            <h2> Thanks! </h2>
+            <p>Check your email for le details<br>
+                See you next practice;)</p>
+            <button id="close" type="submit">Close</button>
+        </div>
     </div>
-    </div>
 
-    </form>
+</form>
 
-    <div id="footer"></div>
+<div id="footer"></div>
 
-    <script src="../footer.js"></script>
+<script src="../footer.js"></script>
 <script src="./joinleonardofk.js"></script>
+
 </body>
 </html>
