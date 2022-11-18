@@ -2,7 +2,7 @@
 <head>
     <title>Leonardo Sports</title>
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../event.css">
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
     <div class="top">
@@ -67,28 +67,20 @@
                 <h3>Events</h3>
                 <p style="height: 150px;">Lorem ipsum er opprinnelig et lettere redigert utdrag fra De finibus bonorum et malorum av Cicero. Opprinnelig begynte avsnittet: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
             </div>
-            <div class="bubbles">
-                <div class="join">
-                    <a href="../joinpage/joinBeerpong.html">Join us!</a>
-                </div>
-                <div class="about">
-                    <a href="../eventpage/eventsBeerpong.html">Events</a>
-                </div>
-            </div>
         </div>
         <div class="gallery">
             <div id="arrow">
                 <p>Look at our upcoming <br> events!</p>
-                <img src="../img/arrow.png">
+                <img src="../img/arrow.png" style="">
             </div>
-            <div class="imgcontainer">
+            <div class="imgCalender">
                 <img src="../img/kalendernovember.jpg">
                     <button class="konkurranse1" onclick="konkurranse1()">!</button>
-                    <p id="svar1"></p>
+                    <p id="svar1" onclick="svar1()"></p>
                     <button class="konkurranse2" onclick="konkurranse2()">!</button>
-                    <p id="svar2"></p>
+                    <p id="svar2" onclick="svar2()"></p>
                     <button div class="konkurranse3" onclick="konkurranse3()">!</button>
-                    <p id="svar3"></p>
+                    <p id="svar3" onclick="svar3()"></p>
             </div>
         </div>
     </div>
@@ -96,6 +88,9 @@
     <div class="illustration beerpong">
     <img src="../img/beerpongminusball.png" style="transform: rotateY(180deg); width: 22vw; height: 24vw; object-fit: cover; object-position: 0 100%;">
     </div>
+    
+    <div id="footer"></div>
+    <script src="../footer.js"></script>
     <script src="./event.js"></script>
 </body>
 </html>

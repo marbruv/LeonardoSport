@@ -6,11 +6,15 @@ body {
 
 h1 {
     font-size: 36px;
-    white-space: nowrap;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 h1, h2, h3, h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;
 }
 
 p {
@@ -108,17 +112,6 @@ a {
     border-radius: 25px;
 }
 
-.content {
-    display: flex;
-    margin-top: 10vh;
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
-.sidemenu {
-    width: 30vw;
-}
-
 .con {
     max-width: 1050px;
     width: 90%;
@@ -190,6 +183,13 @@ a {
     justify-content: space-between;
 }
 
+.content {
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
 .abouttext {
     display: flex;
     flex-direction: column;
@@ -241,20 +241,21 @@ a {
     height: 15vw;
 }
 
-
-
 .imgcontainer {
-    display: flex;
-    height: 32vw;
-    width: 32vw;
-    margin-top: -50px;
-    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 41vw;
+    width: 41vw;
+    margin-top: -40px;
+    border-radius: 50%;
 }
 
 .imgCalender {
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin-top: -50px;
     
 }
@@ -267,8 +268,8 @@ a {
     display: flex;
     position: absolute;
     max-width: 60px;
-    top: 84%;
-    left: 57.5%;
+    top:  84%;
+    left: 57.5vw;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -276,12 +277,13 @@ a {
     border-radius: 10px;
     padding: 12px 24px;
     border: none;
+    cursor: pointer;
 }
 .imgCalender .konkurranse1 {
     display: flex;
     position: absolute;
     top: 84%;
-    left: 57.5%;
+    left: 57.5vw;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -293,78 +295,98 @@ a {
 }
 
 .imgCalender .konkurranse1:hover {
-    font-size:large;
+    font-size: large;
 }
 #svar2 {
-    display:flex;
-    position:absolute;
+    display: flex;
+    position: absolute;
     max-width: 70px;
-    top:84%;
-    left:80%;
+    top: 84%;
+    left: 80%;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color:#197B6E;
     border-radius: 10px;
-    padding:12px 24px;
-    border:none;
+    padding: 12px 24px;
+    border: none;
 }
 
 .imgCalender .konkurranse2 {
-    display:flex;
-    position:absolute;
-    top:84%;
-    left:80%;
+    display: flex;
+    position: absolute;
+    top: 84%;
+    left: 80%;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color:#197B6E;
     border-radius: 10px;
-    padding:12px 24px;
-    border:none;
-    cursor:pointer;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
 }
 
 .imgCalender .konkurranse2:hover {
-    font-size:large;
+    font-size: large;
 }
 
 #svar3 {
-    display:flex;
-    position:absolute;
+    display: flex;
+    position: absolute;
     top: 91%;
-    left:68.5%;
+    left: 68.5%;
     max-width: 70px;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color:#197B6E;
     border-radius: 10px;
-    padding:12px 24px;
-    border:none;
-    cursor:pointer;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
 }
 .imgCalender .konkurranse3 {
-    display:flex;
-    position:absolute;
+    display: flex;
+    position: absolute;
     top: 91%;
-    left:68.5%;
+    left: 68.5%;
     margin-top: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color:#197B6E;
     border-radius: 10px;
-    padding:12px 24px;
-    border:none;
-    cursor:pointer;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
 }
 
 .imgcontainer .konkurranse3:hover {
-    font-size:large;
+    font-size: large;
 }
 
+#hovedbilde {
+    border-radius: 50%;
+    max-height: 95%;
+    max-width: 90%;
+}
 
-   
+#clickleft {
+    z-index: 10;
+    left: 10%;
+    width: 10%;
+    height: 10%;
+    transform: rotate(90deg);
+}
+ 
+ #clickright {
+    z-index: 10;
+    right: 10%;
+    width: 10%;
+    height: 10%;
+    transform: rotate(-90deg);
+}
+
 .illustration {
     position: relative;
     width: fit-content;
@@ -401,6 +423,81 @@ a {
     text-align: center;
     font-size: 1vw;
     margin-top: 20px;
+}
+
+#footer {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bordtennisIllustrasjon {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+}
+
+#BeerpongIllustrasjon {
+    float: right;
+    width: 45vw;
+    height: 35vw;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.sportsimgs {
+    margin-top: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#info {
+    justify-items: center;
+    margin: auto;
+    width: 40vw;
+    margin-top: 10vw;
+}
+
+#circle1 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    border-radius: 10vw;
+    background: grey
+  }
+
+#circle2 {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    border-radius: 15vw;
+    background-color: grey;
+}
+#circle3 {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    border-radius: 15vw;
+    background-color: black;
+}
+
+#circle4 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    border-radius: 10vw;
+    background: black;
 }
 
 @media only screen and (max-width: 1007px) {
@@ -467,13 +564,13 @@ a {
         transition: transform 0.4s ease-in-out;
     }
 
+    .abouttext {
+        flex-direction: row;
+    }
+
     .container {
         margin-top: 12.8vh;
         flex-direction: column;
-    }
-
-    .abouttext {
-        flex-direction: row;
     }
 
     .gallery {
@@ -520,6 +617,10 @@ a {
     .beerpong {
         margin-top: -400;
     }
+
+    #footer {
+        margin-top: 350px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -556,5 +657,9 @@ a {
 
     .beerpong {
         margin-top: -200px;
+    }
+
+    #footer {
+        margin-top: 100px;
     }
 }
