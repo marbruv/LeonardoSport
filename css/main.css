@@ -30,15 +30,6 @@ a {
     color: #022435;
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top img {
-    width: 60px;
-}
-
 .navbar {
     height: 60px;
     display: flex;
@@ -46,6 +37,10 @@ a {
     justify-content: space-between;
     width: 84vw;
     margin: auto;
+}
+
+.navbar img {
+    width: 60px;
 }
 
 #dot {
@@ -188,6 +183,7 @@ a {
     margin-top: 10vh;
     margin-left: 8%;
     margin-right: 8%;
+    justify-content: center;
 }
 
 .abouttext {
@@ -377,6 +373,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(90deg);
+    cursor: pointer;
 }
  
  #clickright {
@@ -385,6 +382,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(-90deg);
+    cursor: pointer;
 }
 
 .illustration {
@@ -435,69 +433,52 @@ a {
     justify-content: center;
 }
 
-#bordtennisIllustrasjon {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-}
-
-#BeerpongIllustrasjon {
-    float: right;
-    width: 45vw;
-    height: 35vw;
-    position: absolute;
-    right: 0px;
-    z-index: -1;
-}
-
-.sportsimgs {
-    margin-top: 20vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
+#footerhome { /*må fikse denne!*/
+    width: 100vw;
+    height: 20vh;
+    position: sticky;
+    margin-top: 10vw;
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 1vw;
-    column-gap: 10vw;
     align-items: center;
     justify-content: center;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    height: 110vh;
+    margin-top: 12vh;
+}
+
+#bordtennisill {
+    width: 25vw;
+}
+
+#beerpongill {
+    width: 30vw;
+    align-self: flex-end;
+    margin-top: -250px;
+}
+
+#croquetill {
+    width: 30vw;
+    transform: rotateY(180deg);
+    margin-left: 5vw;
+    z-index: -1;
+    margin-top: 50px;
+}
+
+#fkill {
+    width: 30vw;
+    align-self: flex-end;
+    margin-top: -230px;
+    margin-right: 5vw;
+}
+
 #info {
-    justify-items: center;
-    margin: auto;
     width: 40vw;
-    margin-top: 10vw;
-}
-
-#circle1 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: grey
-  }
-
-#circle2 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: grey;
-}
-#circle3 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
-}
-
-#circle4 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
+    margin-top: -100vh;
 }
 
 .containerjoin {
