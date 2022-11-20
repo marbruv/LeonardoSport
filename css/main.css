@@ -30,15 +30,6 @@ a {
     color: #022435;
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top img {
-    width: 60px;
-}
-
 .navbar {
     height: 60px;
     display: flex;
@@ -46,6 +37,10 @@ a {
     justify-content: space-between;
     width: 84vw;
     margin: auto;
+}
+
+.navbar img {
+    width: 60px;
 }
 
 #dot {
@@ -188,6 +183,7 @@ a {
     margin-top: 10vh;
     margin-left: 8%;
     margin-right: 8%;
+    justify-content: center;
 }
 
 .abouttext {
@@ -377,6 +373,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(90deg);
+    cursor: pointer;
 }
  
  #clickright {
@@ -385,6 +382,7 @@ a {
     width: 10%;
     height: 10%;
     transform: rotate(-90deg);
+    cursor: pointer;
 }
 
 .illustration {
@@ -435,69 +433,238 @@ a {
     justify-content: center;
 }
 
-#bordtennisIllustrasjon {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-}
-
-#BeerpongIllustrasjon {
-    float: right;
-    width: 45vw;
-    height: 35vw;
-    position: absolute;
-    right: 0px;
-    z-index: -1;
-}
-
-.sportsimgs {
-    margin-top: 20vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
+#footerhome { /*må fikse denne!*/
+    width: 100vw;
+    height: 20vh;
+    position: sticky;
+    margin-top: 10vw;
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 1vw;
-    column-gap: 10vw;
     align-items: center;
     justify-content: center;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    height: 110vh;
+    margin-top: 12vh;
+}
+
+#bordtennisill {
+    width: 25vw;
+}
+
+#beerpongill {
+    width: 30vw;
+    align-self: flex-end;
+    margin-top: -250px;
+}
+
+#croquetill {
+    width: 30vw;
+    transform: rotateY(180deg);
+    margin-left: 5vw;
+    z-index: -1;
+    margin-top: 50px;
+}
+
+#fkill {
+    width: 30vw;
+    align-self: flex-end;
+    margin-top: -230px;
+    margin-right: 5vw;
+}
+
 #info {
-    justify-items: center;
-    margin: auto;
     width: 40vw;
-    margin-top: 10vw;
+    margin-top: -100vh;
 }
 
-#circle1 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: grey
-  }
-
-#circle2 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: grey;
-}
-#circle3 {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 15vw;
-    border-radius: 15vw;
-    background-color: black;
+.containerjoin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    margin-top: 10vh;
 }
 
-#circle4 {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10vw;
-    border-radius: 10vw;
-    background: black;
+.form {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+input.questions {
+    font-size: 22px; 
+    display:block;
+    font-weight: 300;
+    border-radius: 2px;
+    margin: 0;
+    outline:0;
+    border: none;
+    width: 500px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2s ease, margin-top 0.2s ease; 
+}
+
+input.questions + label {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    border-top: 2px solid #022435;
+    height: 0px;
+}
+
+input.questions:focus + label {
+    width: 100%;
+}
+
+input.questions:focus, input.questions:valid {
+    padding-top: 35px;
+}
+
+input.questions:focus + label > span, input.questions:valid + label > span {
+    top: -70px; /*avstand mellom label og input*/
+    font-size: 14px; /*when placemaker becomes label in top*/
+    color: #333;
+}
+
+input.questions:valid + label {
+    border-color: #d66b1e;
+}
+
+input.questions:invalid {
+    box-shadow: none;
+}
+
+input.questions + label > span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8F8F8F;
+    font-size: 18px; /*placemaker tekst*/
+    top: -40px;
+    left: 0px;
+    z-index: -1;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.test {
+    width: 500px;
+}
+
+.heading label {
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+}
+
+.test input[type="checkbox"] {
+    display: none;
+}
+
+.test input[type="radio"] {
+    display: none;
+}
+
+.test label {
+    display: inline-block;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    width: 110px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.test label:hover {
+    background-color: #dfab86;
+  
+}
+
+.test input[type="radio"]:focus {
+    border: 10px dashed #444;
+}
+
+.test input[type="radio"]:checked + label {
+    color: white;
+    background-color: #d66b1e;
+    border-color: #022435;
+}
+
+.test input[type="checkbow"]:focus {
+    border: 10px dashed #444;
+}
+
+.test input[type="checkbox"]:checked + label {
+    color: white;
+    background-color: #d66b1e;
+    border-color: #022435;
+}
+
+.form button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color:177c6e;
+    color:#fff;
+    width: 80px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    border:none;
+}
+
+.form button:hover  {
+    background-color: #0e5047;
+}
+
+.option-container {
+    margin-top: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-container select {
+    width: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.option {
+    margin-bottom: 15px;
+}
+
+.thankyou {
+    text-align: center;
+}
+
+.thankyou button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #d66b1e;
+    color:#fff;
+    width: 80px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+.thankyou button:hover {
+    background-color:#a74a07;
 }
 
 @media only screen and (max-width: 1007px) {
