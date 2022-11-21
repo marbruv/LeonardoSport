@@ -250,8 +250,8 @@ a {
 
 .imgCalender {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 32vw;
+    width: 32vw;
     margin-top: -50px;
     
 }
@@ -392,7 +392,7 @@ a {
 }
 
 .croquet {
-    margin-top: -450px;
+    margin-top: -200px;
 }
 
 .fk {
@@ -400,11 +400,11 @@ a {
 }
 
 .beerpong {
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 .bordtennis {
-    margin-top: -200px;
+    margin-top: -300px;
 }
 
 #arrow > img {
@@ -426,18 +426,18 @@ a {
 #footer {
     width: 100vw;
     height: 20vh;
-    position: absolute;
-    margin-top: 10px;
+    position: relative;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#footerhome { /*må fikse denne!*/
+#footerhome {
     width: 100vw;
     height: 20vh;
     position: sticky;
-    margin-top: 10vw;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -667,7 +667,16 @@ input.questions + label > span {
     background-color:#a74a07;
 }
 
+.bubbles {
+    margin-top: 300px;
+    margin-left: 20vw;
+}
+
 @media only screen and (max-width: 1007px) {
+    .galleryCalender {
+        display: none;
+    }
+
     .nav-container .burger .line {
         display: block;
         height: 4px;
@@ -782,11 +791,31 @@ input.questions + label > span {
     }
 
     .beerpong {
-        margin-top: -400;
+        margin-top: -100px;
     }
 
     #footer {
-        margin-top: 350px;
+        margin-top: 600px;
+    }
+
+    #footerhome {
+        margin-top: -400px;
+    }
+
+    #bordtennisill {
+        width: 250px;
+    }
+
+    #beerpongill {
+        width: 290px;
+    }
+
+    #croquetill {
+        width: 310px;
+    }
+
+    #fkill {
+        width: 250px;
     }
 }
 
@@ -815,18 +844,34 @@ input.questions + label > span {
     }
 
     .bordtennis {
-        margin-top: -200px;
+        margin-top: -250px;
     }
 
     .croquet {
-        margin-top: -300px;
+        margin-top: -20px;
     }
 
     .beerpong {
-        margin-top: -200px;
+        margin-top: 100px;
     }
 
     #footer {
         margin-top: 100px;
+    }
+
+    #bordtennisill {
+        display: none;
+    }
+
+    #beerpongill {
+        display: none;
+    }
+
+    #croquetill {
+        display: none;
+    }
+
+    #fkill {
+        display: none;
     }
 }
